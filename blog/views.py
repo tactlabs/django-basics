@@ -19,10 +19,11 @@ posts = [
 # Create your views here.
 def home(request):
     context = {
-        'posts' : posts
+        'posts' : posts,
+        'title' : '2 Home Page'
     }
     return render(request, 'blog/home.html', context)
 
 
 def about(request):
-    return render(request, 'blog/about.html')
+    return render(request, 'blog/about.html', {'title' : 'Some About'})
