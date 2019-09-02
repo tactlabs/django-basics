@@ -20,10 +20,10 @@ posts = [
 def home(request):
     context = {
         'posts' : posts,
-        'title' : '2 Home Page'
+        'title' : 'Home Page'
     }
     return render(request, 'blog/home.html', context)
 
 
 def about(request):
-    return render(request, 'blog/about.html', {'title' : 'Some About'})
+    return render(request, 'blog/about.html', {'title' : 'About Page'})
