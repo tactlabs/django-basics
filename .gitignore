@@ -22,3 +22,5 @@
 *template.ipynb
 
 .vscode/
+
+*.pyc
